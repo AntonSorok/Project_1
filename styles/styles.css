@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+
+}
+
+li{
+    list-style: none;
+}
+
+.container {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+header {
+}
+
+nav{
+    height: 80px;
+    margin-top: 20px;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .menu{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url("assets/Icon-Burger-menu.svg") no-repeat center center;
+    cursor: default;
+}
+
+nav .menu:hover{
+    background: url("assets/Icon-Burger-menu-hover.svg") no-repeat center center;
+}
+
+nav .logo{
+    display: block;
+    width: 136px;
+    height: 80px;
+    background: url("assets/Logo_Miami.svg") no-repeat center center;
+    cursor:default;
+}
+
+nav .phone{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url("assets/Icon-Phone-call.svg") no-repeat center center;
+    cursor: default;
+}
+.header {
+    height: 100vh;
+    background: url("assets/FirstSectionLayer.jpg") no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header_title{
+    text-align: left;
+    margin: auto auto 80px auto;
+}
+
+.header_title > hr{
+    width: 40px;
+    height: 2px;
+}
+
+.header_title > h1 {
+    font-size: 80px;
+    letter-spacing: -1.5px;
+    font-weight: 700;
+    vertical-align: middle;
+    color: #fff;
+}
