@@ -225,3 +225,245 @@ nav .phone{
     grid-column: span 4 / span 4;
     grid-column-start: 3;
 }
+
+.gallery_viewButton {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    vertical-align: middle;
+
+    color: #0075FF;
+
+    align-self: center;
+    border: 2px solid #0075FF;
+    border-radius: 8px;
+
+    padding: 21px 47px;
+}
+
+.testimonials{
+margin-top: 104px;
+}
+
+.cards {
+    display: flex;
+    gap: 24px;
+
+    margin-top: 56px;
+}
+
+.card{
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.card_info{
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+
+    margin-top:32px;
+}
+
+.card_info > h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: center;
+
+    color: #0075FF;
+}
+
+.card_info > .jobTitle{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: center;
+
+    color: #9FADC2;
+}
+
+.card_info > .about {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: center;
+
+    color: #3E3E3E;
+}
+
+.contact {
+    box-sizing: border-box;
+
+    margin-top: 104px;
+    margin-bottom: 104px;
+}
+
+.contactBox{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 69px;
+}
+
+.contactInfo{
+    /*width: 411px;*/
+    height: 148px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 111px;
+}
+
+.info{
+    width: 150px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info > p:nth-child(1){
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0;
+
+    color: #9FADC2;
+}
+
+.info > p:nth-child(2){
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0;
+
+    color: #3E3E3E;
+
+}
+
+.contact_form{
+    width: 411px;
+
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+
+}
+
+.form_input{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+.form_input > input{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+
+    color: #000;
+
+    border-radius: 8px;
+    border: none;
+    background: #F6F8FF;
+    padding: 14px 17px;
+}
+
+.form_input > input:focus{
+    border: 2px solid #0075FF
+}
+
+.form_input > input:hover {
+    border: 2px solid #CCD0E0
+}
+
+.form_input input::placeholder{
+    color: #9FADC2;
+}
+
+
+.form_input textarea{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #000;
+
+    height: 144px;
+    border-radius: 8px;
+    border: none;
+    background: #F6F8FF;
+    padding: 14px 17px;
+
+    resize: none;
+}
+
+.form_input textarea:focus{
+    border: 2px solid #0075FF
+}
+
+.form_input textarea:hover{
+    border: 2px solid #CCD0E0
+}
+
+.form_input textarea::placeholder{
+    color: #9FADC2;
+}
+
+.contact_form > button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+
+    color: #ffffff;
+
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 13px 27px 0 #0053B575;
+
+    padding: 24px 0;
+
+    background: #005ECC;
+}
+
+footer{
+    position: relative;
+    height: 359px;
+
+    background: url("assets/footerImage.png") no-repeat center center;
+    background-size: cover;
+}
+footer > .logo{
+    display: block;
+    width: 136px;
+    height: 80px;
+    background: url("assets/Logo_Miami.svg") no-repeat center center;
+    cursor:default;
+
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
