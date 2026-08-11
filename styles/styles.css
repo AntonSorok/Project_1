@@ -6,6 +6,57 @@
 
 }
 
+button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+
+    color: #FFFFFF;
+
+    align-self: center;
+    border-radius: 8px;
+    border: none;
+
+    padding: 21px 47px;
+}
+
+.primary {
+    background: #0075FF;
+    box-shadow: 0 6px 23px 0 #0075FF75;
+}
+
+.primary:hover {
+    background: #005ECC;
+    box-shadow: 0 13px 27px 0 #0053B575;
+
+}
+
+.primary:active {
+    background: #005ECC;
+    box-shadow: 0 8px 14px 0 #0053B57A;
+}
+
+.secondary {
+    color: #0075FF;
+    border: 2px solid #0075FF
+}
+
+.secondary:hover {
+    color: #FFFFFF;
+    background: #005ECC;
+    box-shadow: 0 13px 27px 0 #0053B575;
+}
+
+.secondary:active {
+    color: #FFFFFF;
+    background: #005ECC;
+    box-shadow: 0 8px 14px 0 #0053B57A;
+}
+
+
 li{
     list-style: none;
 }
@@ -226,21 +277,21 @@ nav .phone{
     grid-column-start: 3;
 }
 
-.gallery_viewButton {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 14px;
-    text-align: center;
-    vertical-align: middle;
+/*.gallery_viewButton {*/
+/*    font-weight: 700;*/
+/*    font-size: 16px;*/
+/*    line-height: 14px;*/
+/*    text-align: center;*/
+/*    vertical-align: middle;*/
 
-    color: #0075FF;
+/*    color: #0075FF;*/
 
-    align-self: center;
-    border: 2px solid #0075FF;
-    border-radius: 8px;
+/*    align-self: center;*/
+/*    border: 2px solid #0075FF;*/
+/*    border-radius: 8px;*/
 
-    padding: 21px 47px;
-}
+/*    padding: 21px 47px;*/
+/*}*/
 
 .testimonials{
 margin-top: 104px;
@@ -427,24 +478,24 @@ margin-top: 104px;
     color: #9FADC2;
 }
 
-.contact_form > button{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 14px;
-    letter-spacing: 0;
-    text-align: center;
-    vertical-align: middle;
+/*.contact_form > button{*/
+/*    font-weight: 700;*/
+/*    font-size: 16px;*/
+/*    line-height: 14px;*/
+/*    letter-spacing: 0;*/
+/*    text-align: center;*/
+/*    vertical-align: middle;*/
 
-    color: #ffffff;
+/*    color: #ffffff;*/
 
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 13px 27px 0 #0053B575;
+/*    border: none;*/
+/*    border-radius: 8px;*/
+/*    box-shadow: 0 13px 27px 0 #0053B575;*/
 
-    padding: 24px 0;
+/*    padding: 24px 0;*/
 
-    background: #005ECC;
-}
+/*    background: #005ECC;*/
+/*}*/
 
 footer{
     position: relative;
