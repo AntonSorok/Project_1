@@ -6,6 +6,14 @@
 
 }
 
+section {
+    scroll-margin: 104px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -76,8 +84,19 @@ li{
     margin: 0 auto;
 }
 
+.header {
+    position: relative;
+    height: 100vh;
+    background: url("assets/FirstSectionLayer.jpg") no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
 .nav {
-    position: fixed;
+    position: absolute;
     top: 20px; left: 0; right: 0;
     z-index: 20;
     height: 80px;
@@ -121,6 +140,12 @@ body.menu-open .nav__phone{
     background: url("assets/Icon-Burger-menu-hover.svg") no-repeat center center;
 }
 
+body.menu-open{
+    overflow: hidden;
+}
+
+body.menu-open .nav { position: fixed; top: 20px; }
+
 body.menu-open .nav__burger {
     background: url("assets/Icon-Close.svg") no-repeat center center;
 }
@@ -133,6 +158,12 @@ body.menu-open .nav__burger {
     cursor:default;
 }
 
+.nav__phone-wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .nav__phone{
     display: block;
     width: 32px;
@@ -141,14 +172,20 @@ body.menu-open .nav__burger {
     cursor: default;
 }
 
-.header {
-    height: 100vh;
-    background: url("assets/FirstSectionLayer.jpg") no-repeat center center;
-    background-size: cover;
-    overflow: hidden;
+.nav__phone-number{
+    position: absolute;
+    right: 40px;
+    white-space: nowrap;
+    color: #fff;
+    opacity: 0;
+    transform: translateX(10px);
+    pointer-events: none;
+    transition: opacity 0.5s, transform 0.5s;
+}
 
-    display: flex;
-    flex-direction: column;
+.nav__phone-wrap:hover .nav__phone-number{
+    opacity: 1 ;
+    transform: translateX(0px);
 }
 
 .header__title{

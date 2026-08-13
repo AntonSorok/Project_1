@@ -57,33 +57,37 @@
 <!--        </h1>-->
 <!--    </div>-->
 <!--</section>-->
-<nav class="nav container" aria-label="main navigation">
-    <a class="nav__burger" href="#" aria-label="menu" aria-expanded="false"></a>
-    <a class="nav__logo" href="#"></a>
-    <a class="nav__phone" href="#" aria-label="phone"></a>
-</nav>
 
-<div class="overlay ">
-    <ul class="overlay__list container">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Contacts</a></li>
-    </ul>
-    <ul class="overlay__contact container">
-        <li><a href="tel:+123455555555 ">+1 234 5555-55-55</a></li>
-        <li><a href="#">Call to order</a></li>
-    </ul>
-</div>
-<section class="header">
+<section id="header" class="header">
+    <nav class="nav container" aria-label="main navigation">
+        <a class="nav__burger" href="#" aria-label="menu" aria-expanded="false"></a>
+        <a class="nav__logo" href="#"></a>
+        <div class="nav__phone-wrap">
+            <a class="nav__phone" href="#" aria-label="phone"></a>
+            <span class="nav__phone-number">+1 234 5555-55-55</span>
+        </div>
+    </nav>
+
+    <div class="overlay ">
+        <ul class="overlay__list container">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#intro">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contacts</a></li>
+        </ul>
+        <ul class="overlay__contact container">
+            <li><a href="tel:+123455555555 ">+1 234 5555-55-55</a></li>
+            <li><a href="#">Call to order</a></li>
+        </ul>
+    </div>
     <div class="header__title container">
         <hr>
         <h1>Miami <br> Condo Kings</h1>
     </div>
 </section>
 <main>
-    <section class="intro container">
+    <section id="intro" class="intro container">
         <div>
             <h2>Miami best <br> Real estate <br> <span>here</span></h2>
         </div>
@@ -96,7 +100,7 @@
                 <span>We will never be late!<br> Guaranteed secure transaction - 100%</span></p>
         </div>
     </section>
-    <section class="gallery container">
+    <section id="gallery" class="gallery container">
         <div class="title">
             <h2>Gallery</h2>
             <img src="styles/assets/Icon-Corona-virus.svg" alt="Corona Icon">
@@ -124,7 +128,7 @@
         </div>
         <button class="secondary">View all</button>
     </section>
-    <section class="testimonials container">
+    <section id="testimonials" class="testimonials container">
         <div class="title">
             <h2>Testimonials</h2>
             <img src="styles/assets/Icon-Corona-virus.svg" alt="Corona Icon">
@@ -156,7 +160,7 @@
             </div>
         </div>
     </section>
-    <section class="contact container">
+    <section id="contact" class="contact container">
         <div class="title">
             <h2>Contact us</h2>
             <img src="styles/assets/Icon-Corona-virus.svg" alt="Corona Icon">
