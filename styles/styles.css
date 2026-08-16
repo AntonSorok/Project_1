@@ -1,4 +1,4 @@
-* {
+*, *:before, *:after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,7 +17,7 @@ html {
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 256px;
+    /*grid-template-rows: 256px;*/
     gap: 24px;
 }
 
@@ -59,7 +59,8 @@ button {
 }
 
 .secondary {
-    color: #0075FF;: 2 px solid #0075FF
+    color: #0075FF;
+    outline: 2px solid #0075FF;
 }
 
 .secondary:hover {
@@ -80,12 +81,14 @@ li {
 }
 
 .container {
-    max-width: 1040px;
+    max-width: 1260px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 120px;
 }
 
 .header {
-    position: relative;
+    /*position: relative;*/
     height: 100vh;
     background: url("assets/FirstSectionLayer.jpg") no-repeat center center;
     background-size: cover;
@@ -318,11 +321,8 @@ body.menu-open .nav__burger {
     color: #0075FF;
 }
 
-.photos {
-    /*display: grid;*/
-    /*grid-template-columns: repeat(6, 1fr);*/
-    /*grid-template-rows: 256px;*/
-    /*gap: 24px;*/
+.photos.grid {
+    grid-template-rows: 271px;
 }
 
 .photos div img {
@@ -332,33 +332,27 @@ body.menu-open .nav__burger {
 }
 
 .first_group > .photos > :nth-child(1) {
-    grid-column: span 8 / span 8;
-    grid-column-start: 1;
+    grid-column: span 8;
 }
 
 .first_group > .photos > :nth-child(2) {
-    grid-column: span 4 / span 4;
-    grid-column-start: 9;
+    grid-column: span 4;
 }
 
 .second_group > .photos > :nth-child(1) {
-    grid-column: span 6 / span 6;
-    grid-column-start: 1;
+    grid-column: span 6;
 }
 
 .second_group > .photos > :nth-child(2) {
-    grid-column: span 6 / span 6;
-    grid-column-start: 7;
+    grid-column: span 6;
 }
 
 .third_group > .photos > :nth-child(1) {
-    grid-column: span 4 / span 4;
-    grid-column-start: 1;
+    grid-column: span 4;
 }
 
 .third_group > .photos > :nth-child(2) {
-    grid-column: span 8 / span 8;
-    grid-column-start: 5;
+    grid-column: span 8;
 }
 
 .testimonials {
@@ -366,14 +360,15 @@ body.menu-open .nav__burger {
 }
 
 .cards {
-    display: flex;
+    /*display: flex;*/
     gap: 24px;
 
     margin-top: 56px;
 }
 
 .card {
-    max-width: 324px;
+    grid-column: span 4;
+    /*max-width: 324px;*/
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -381,8 +376,10 @@ body.menu-open .nav__burger {
 }
 
 .card > img {
-    width: 150px;
-    height: 150px;
+    max-width: 150px;
+    width: 100%;
+    max-height: 150px;
+    height: 100%;
     border-radius: 50%;
 }
 
@@ -430,8 +427,8 @@ body.menu-open .nav__burger {
 }
 
 .contactBox {
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
 
     margin-top: 69px;
 }
@@ -439,18 +436,19 @@ body.menu-open .nav__burger {
 .contactInfo {
     /*width: 411px;*/
     height: 148px;
+    grid-column: span 5;
 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    row-gap: 24px;
+    /*row-gap: 24px;*/
     column-gap: 111px;
 }
 
 .info {
+    grid-column: span 2;
     width: 150px;
 
-    display: flex;
     flex-direction: column;
     gap: 8px;
 }
@@ -476,8 +474,7 @@ body.menu-open .nav__burger {
 
 .contact_form {
     width: 100%;
-    max-width: 411px;
-
+    grid-column: 8 / 13;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -655,15 +652,65 @@ footer > .logo {
     display: none;
 }
 
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 40px
+    }
+
+    .grid {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .first_group > .photos > :nth-child(1) {
+        grid-column: span 4;
+    }
+
+    .first_group > .photos > :nth-child(2) {
+        grid-column: span 4;
+    }
+
+    .second_group > .photos > :nth-child(1) {
+        grid-column: span 4;
+    }
+
+    .second_group > .photos > :nth-child(2) {
+        grid-column: span 4;
+    }
+
+    .third_group > .photos > :nth-child(1) {
+        grid-column: span 4;
+    }
+
+    .third_group > .photos > :nth-child(2) {
+        grid-column: span 4;
+    }
+
+    .contactInfo {
+        grid-column: span 3;
+    }
+
+    .contact_form {
+        grid-column: 5 / 9;
+    }
+
+
+    .card {
+        grid-column: span 8
+    }
+
+}
+
+
 @media (max-width: 768px) {
     .container {
-        max-width: 320px;
-        margin: 0 20px;
+        /*max-width: 320px;*/
+        /*width: 100%;*/
+        /*margin: 0 auto;*/
+        padding: 0 20px;
     }
 
     .grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 131px;
         gap: 20px;
     }
 
@@ -724,11 +771,8 @@ footer > .logo {
     }
 
     .gallery {
+        gap: 32px;
         margin-top: 64px;
-    }
-
-    .grid {
-
     }
 
     .first_group > .photos > :nth-child(1) {
@@ -755,10 +799,6 @@ footer > .logo {
         grid-column: span 1;
     }
 
-    .gallery {
-        gap: 32px;
-    }
-
     .gallery p {
         font-size: 16px;
         line-height: 27px;
@@ -766,7 +806,11 @@ footer > .logo {
         margin-top: 16px;
     }
 
-    .testimonials{
+    .photos.grid {
+        grid-template-rows: 131px;
+    }
+
+    .testimonials {
         margin-top: 64px;
     }
 
@@ -776,15 +820,14 @@ footer > .logo {
 
     }
 
-    .cards{
-        flex-direction: column;
-    }
-
+    /*.cards {*/
+    /*    flex-direction: column;*/
+    /*}*/
     .card {
-        gap: 24px;
+        grid-column: span 2;
     }
 
-    .contact{
+    .contact {
         margin-top: 64px;
         margin-bottom: 64px;
     }
@@ -794,22 +837,35 @@ footer > .logo {
         line-height: 36px;
     }
 
-    .contactBox{
-        flex-direction: column;
-        gap:32px;
+    .contactInfo {
+        grid-column: span 3;
     }
 
-    .contactInfo{
-        height: auto;
-        flex-direction: column;
+    .contact_form {
+        grid-column: 5 / 9;
     }
 
-    .footer{
+    .contactBox {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contactInfo {
+        /*height: auto;*/
+        grid-column: span 2;
+        /*flex-direction: column;*/
+    }
+
+    .contact_form{
+        grid-column: span 2;
+    }
+
+    .footer {
         height: 320px;
         bottom: 24px;
     }
 
-    .footer > .logo{
+    .footer > .logo {
         width: 82px;
         height: 48px;
     }
