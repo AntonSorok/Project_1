@@ -4,7 +4,7 @@
 
 ## Демо:** https://antonsorok.github.io/Project_1/
 
-![Screenshot](assets/screenshot.png)  
+![Screenshot](styles/assets/screenshot.png)  
 
 ## Что реализовано в проекте:
 
